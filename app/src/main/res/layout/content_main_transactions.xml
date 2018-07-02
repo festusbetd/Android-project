@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    android:background="@android:color/white"
+    >
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tl"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <!--
+        * TableLayout is a layout that arranges its children into rows and columns.
+        * A TableLayout consists of a number of TableRow objects, each defining a row.
+        * Each row has zero or more cells.
+        * Each cell can hold one View object.
+        * TableLayout containers do not display border lines for their rows, columns, or cells.
+        * The table has as many columns as the row with the most cells.
+        * A table can leave cells empty. Cells can span columns.
+        * The width of a column is defined by the row with the widest cell in that column.
+        * TableLayout can specify certain columns as shrinkable or stretchable
+          by calling setColumnShrinkable() or setColumnStretchable().
+        * In this example code we generate border for table and its columns, rows and cells.
+    -->
+    <TableRow
+        android:id="@+id/tr_header"
+        android:background="@drawable/table_row_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/transactions_serisl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serial Number"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            />
+        <TextView
+            android:id="@+id/transactions_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="60dp"
+            />
+
+        <TextView
+            android:id="@+id/transactions_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="85dp"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tr_item_1"
+        android:background="@drawable/table_row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_product_item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00423525"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="32dp"
+            />
+        <TextView
+            android:id="@+id/tv_author_item_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ksh 20"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            />
+        <TextView
+            android:id="@+id/tv_quantity_item_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16/04/2018"
+            android:background="@drawable/table_cell_bg"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="36dp"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tr_item_2"
+        android:background="@drawable/table_row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_product_item_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="72065149"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="32dp"
+            />
+        <TextView
+            android:id="@+id/tv_author_item_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ksh 60"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            />
+        <TextView
+            android:id="@+id/tv_quantity_item_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16/04/2018"
+            android:background="@drawable/table_cell_bg"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="36dp"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tr_item_3"
+        android:background="@drawable/table_row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_product_item_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99339299"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="32dp"
+            />
+        <TextView
+            android:id="@+id/tv_author_item_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ksh 80"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            />
+        <TextView
+            android:id="@+id/tv_quantity_item_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16/04/2018"
+            android:background="@drawable/table_cell_bg"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="36dp"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tr_item_4"
+        android:background="@drawable/table_row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_product_item_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="81245999"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="32dp"
+            />
+        <TextView
+            android:id="@+id/tv_author_item_42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ksh 72"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            />
+        <TextView
+            android:id="@+id/tv_quantity_item_43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18/04/2018"
+            android:background="@drawable/table_cell_bg"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="36dp"
+            />
+
+    </TableRow>
+
+</LinearLayout>
